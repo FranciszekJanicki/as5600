@@ -1,10 +1,11 @@
 #ifndef AS5600_AS5600_CONFIG_H
 #define AS5600_AS5600_CONFIG_H
 
+#include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
 
-#define AS56000_DEV_ADDRESS 0b0110110
+enum { AS5600_DEV_ADDRESS = 0b0110110 };
 
 typedef float float32_t;
 
