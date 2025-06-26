@@ -4,10 +4,8 @@ target_sources(as5600 PRIVATE
     "as5600.c"
 )
 
-target_include_directories(as5600 PUBLIC 
-)
-
-target_link_libraries(as5600 PUBLIC
+target_include_directories(as5600 PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 target_compile_options(as5600 PUBLIC
