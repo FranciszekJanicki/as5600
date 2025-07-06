@@ -5,7 +5,7 @@
 #include <stddef.h>
 #include <stdint.h>
 
-enum { AS5600_DEV_ADDRESS = 0b0110110 };
+enum { AS5600_DEV_ADDRESS = 0x36 };
 
 typedef float float32_t;
 
@@ -113,9 +113,6 @@ typedef struct {
     uint32_t dir_pin;
     uint32_t pgo_pin;
 } as5600_config_t;
-
-typedef struct {
-} as5600_bus_interface_t;
 
 typedef struct {
     void* bus_user;
