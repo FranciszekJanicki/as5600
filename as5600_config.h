@@ -5,7 +5,7 @@
 #include <stddef.h>
 #include <stdint.h>
 
-enum { AS5600_DEV_ADDRESS = 0x36 };
+enum { AS5600_SLAVE_ADDRESS = 0x36 };
 
 typedef float float32_t;
 
