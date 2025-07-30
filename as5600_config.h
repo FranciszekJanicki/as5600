@@ -5,7 +5,11 @@
 #include <stddef.h>
 #include <stdint.h>
 
-enum { AS5600_SLAVE_ADDRESS = 0x36 };
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#define AS5600_SLAVE_ADDRESS 0x36
 
 typedef float float32_t;
 
@@ -131,5 +135,9 @@ typedef struct {
     as5600_err_t (*gpio_deinitialize)(void*);
     as5600_err_t (*gpio_write_pin)(void*, uint32_t, bool);
 } as5600_interface_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // AS5600_AS5600_CONFIG_H

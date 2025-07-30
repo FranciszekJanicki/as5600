@@ -4,6 +4,10 @@
 #include "as5600_config.h"
 #include "as5600_registers.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct {
     as5600_config_t config;
     as5600_interface_t interface;
@@ -67,5 +71,9 @@ as5600_err_t as5600_get_magnitude_reg(as5600_t const* as5600,
 as5600_err_t as5600_send_burn_angle_cmd(as5600_t const* as5600);
 
 as5600_err_t as5600_send_burn_setting_cmd(as5600_t const* as5600);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // AS5600_AS5600_H

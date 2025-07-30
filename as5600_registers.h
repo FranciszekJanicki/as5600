@@ -3,6 +3,10 @@
 
 #include <stdint.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct {
     uint8_t zmco : 2;
 } as5600_zmco_reg_t;
@@ -50,5 +54,9 @@ typedef struct {
 typedef struct {
     uint16_t magnitude : 12;
 } as5600_magnitude_reg_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // AS5600_AS5600_REGISTERS_H
